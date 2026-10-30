@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Open HealthTech Collab Lab</title>
+  <!-- Open hexagon = molecule / network with an open side for collaboration; plus = healthcare -->
+  <rect width="512" height="512" rx="96" fill="#0b5f68"/>
+  <path d="M385.9 181 L385.9 331 L256 406 L126.1 331 L126.1 181 L256 106"
+        fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#ffffff">
+    <circle cx="385.9" cy="331" r="22"/>
+    <circle cx="256" cy="406" r="22"/>
+    <circle cx="126.1" cy="331" r="22"/>
+    <circle cx="126.1" cy="181" r="22"/>
+    <rect x="234" y="191" width="44" height="130" rx="10"/>
+    <rect x="191" y="234" width="130" height="44" rx="10"/>
+  </g>
+  <g fill="#ffc857">
+    <circle cx="256" cy="106" r="26"/>
+    <circle cx="385.9" cy="181" r="26"/>
+  </g>
+</svg>
