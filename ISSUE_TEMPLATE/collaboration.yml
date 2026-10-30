@@ -1,0 +1,39 @@
+name: Collaboration proposal
+description: Propose a partnership, co-supervised project, pilot or guest talk.
+title: "[Collab]: "
+labels: ["collaboration"]
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. For confidential details, email the address on the organization profile instead."
+  - type: input
+    id: organization
+    attributes:
+      label: Your organization
+      placeholder: e.g. university lab, research centre, hospital department
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of collaboration
+      multiple: true
+      options:
+        - Co-supervised student project
+        - Prototype or pilot
+        - Guest talk or workshop
+        - Dataset or problem statement
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What would you like to work on?
+    validations:
+      required: true
+  - type: input
+    id: timeline
+    attributes:
+      label: Preferred timeline
+      placeholder: e.g. next semester, Jan-Jun 2027

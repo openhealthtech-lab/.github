@@ -1,0 +1,41 @@
+name: Project idea
+description: Suggest a problem that could become a student or research project.
+title: "[Idea]: "
+labels: ["project-idea"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should be solved?
+      description: Describe the real-world need in plain words.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Medical imaging AI
+        - AI for drug discovery and biology
+        - Health data and informatics
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Suggested level
+      options:
+        - Year 1-2
+        - Year 3
+        - Final-year project (FYP)
+        - Not sure
+  - type: textarea
+    id: data
+    attributes:
+      label: Data
+      description: Which public dataset could be used? Do not share private data here.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What would success look like?

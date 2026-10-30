@@ -1,0 +1,38 @@
+name: Bug report
+description: Something in a lab, notebook or script does not work.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for reporting! **Do not paste patient data or personal data here.**"
+  - type: input
+    id: location
+    attributes:
+      label: Which file or lab?
+      placeholder: e.g. labs/02-segmentation.ipynb
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open the notebook in Colab\n2. Run cell 4\n3. See error"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error message
+      description: Paste the error text, if any.
+      render: shell
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: e.g. Google Colab, Python 3.11, monai 1.x
